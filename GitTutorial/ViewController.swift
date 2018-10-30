@@ -12,10 +12,12 @@ class ViewController: UIViewController {
     
     let message = "Hello Git!"
     
+    @IBOutlet weak var revLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         print(message)
         print(reverse(text: "stressed"))
+        revLabel.text = reverse(text: "stressed")
     }
     
     override func didReceiveMemoryWarning() {
